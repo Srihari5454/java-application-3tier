@@ -46,6 +46,7 @@ aws-3tier-enterprise/
 ├── terraform.tfvars
 
 │
+
 ├── vpc_app.tf
 
 ├── vpc_shared.tf
@@ -54,22 +55,31 @@ aws-3tier-enterprise/
 
 ├── transit_gateway.tf
 │
+
 ├── security_groups.tf
+
 │
+
 ├── nginx_asg.tf
 
 ├── tomcat_asg.tf
+
 │
+
 ├── nlb_public.tf
 
 ├── nlb_internal.tf
+
 │
+
 ├── rds.tf
 
 ├── elasticache.tf
 
 ├── cloudfront.tf
+
 │
+
 ├── outputs.tf
 
 ⚙️ Prerequisites
@@ -85,6 +95,7 @@ Verify:
 aws --version
 terraform --version
 git --version
+
 🔐 Credentials Handling (Best Practice)
 AWS Credentials: Configured using aws configure
 Database Credentials: Stored in terraform.tfvars
@@ -93,6 +104,7 @@ Example:
 
 db_username = "appuser"
 db_password = "StrongPassword123!"
+
 🚀 Deployment Steps
 1️⃣ Initialize Terraform
 terraform init
@@ -115,6 +127,7 @@ Tomcat builds and deploys the WAR file
 NLBs route traffic
 RDS & Redis are provisioned
 CloudFront exposes a global endpoint
+
 🌐 Accessing the Application
 After deployment:
 
@@ -125,18 +138,21 @@ https://<cloudfront-domain>
 You should see the Java Login application.
 
 ✅ Success Criteria Verification
+
 Requirement	Status
 Public URL accessible	✅
 Auto Scaling working	✅
 Database connectivity	✅
 Monitoring ready	✅
 Secure networking	✅
+
 🧪 Validation Checklist
 EC2 instances running (Nginx & Tomcat)
 Auto Scaling Groups show InService
 Load Balancers are Active
 RDS status is Available
 Redis cluster is Available
+
 🧠 Interview Talking Points
 You can confidently explain:
 
