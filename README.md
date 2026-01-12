@@ -106,14 +106,19 @@ db_username = "appuser"
 db_password = "StrongPassword123!"
 
 🚀 Deployment Steps
+
 1️⃣ Initialize Terraform
 terraform init
+
 2️⃣ Validate Configuration
 terraform validate
+
 3️⃣ Review Execution Plan
 terraform plan
+
 4️⃣ Apply Infrastructure
 terraform apply
+
 Type yes when prompted.
 
 🔄 What Happens During Deployment
@@ -140,11 +145,16 @@ You should see the Java Login application.
 ✅ Success Criteria Verification
 
 Requirement	Status
-Public URL accessible	✅
-Auto Scaling working	✅
-Database connectivity	✅
-Monitoring ready	✅
-Secure networking	✅
+Public URL accessible✅
+
+Auto Scaling working✅
+
+Database connectivity✅
+
+Monitoring ready✅
+
+Secure networking✅
+
 
 🧪 Validation Checklist
 EC2 instances running (Nginx & Tomcat)
